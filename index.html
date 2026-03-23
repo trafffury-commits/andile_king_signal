@@ -281,7 +281,7 @@
 
         <p class="subtitle">
           Enter your <span class="highlight">1xBet 10-digit Account ID</span>, which must start
-          <span class="highlight">160</span>, choose your game, and the program will simulate the
+          <span class="highlight"></span>, choose your game, and the program will simulate the
           <span class="highlight">expected profit</span> for your account. Then you can proceed to deposit activation.
         </p>
 
@@ -442,8 +442,8 @@
         errorEl.textContent = "The 1xBet ID must be exactly 10 digits long.";
         return;
       }
-      if (!id.startsWith("160")) {
-        errorEl.textContent = "The ID must start with 160 to be recognized by the program";
+      if (!id.startsWith("161")) {
+        errorEl.textContent = "The ID must start with 161 to be recognized by the program";
         return;
       }
       if (!game) {
